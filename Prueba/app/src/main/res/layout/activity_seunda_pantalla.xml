@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeundaPantalla">
+
+    <TextView
+        android:id="@+id/tv_bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/et_url"
+        android:inputType="textUri"
+        android:layout_below="@id/tv_bienvenida"/>
+    
+    <Button
+        android:id="@+id/btn_ver_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/et_url"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_ver_web"
+        android:layout_below="@id/et_url"/>
+    <Button
+        android:id="@+id/btn_acerca_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_url"
+        android:layout_alignTop="@id/btn_ver_web"
+        android:layout_toEndOf="@id/btn_ver_web"
+        android:text="@string/btn_acerca_de"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:id="@+id/selec_contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bienvenida"
+        android:layout_alignStart="@id/opciones_intent"
+        android:layout_marginTop="38dp"
+        android:text="@string/tv_select"/>
+    <Spinner
+        android:id="@+id/opciones_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selec_contenido"
+        android:layout_alignStart="@id/et_url"
+        android:layout_alignEnd="@id/et_url"
+        android:layout_marginTop="32dp"/>
+
+
+
+
+
+</RelativeLayout>

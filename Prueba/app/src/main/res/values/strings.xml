@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="bt_titulo">Ir a segunda Actividad</string>
+    <string name="bt_saludo">Saludar</string>
+    <string name="tv_titulo">Primera App</string>
+    <string name="et_dato"> Escribe tu nombre</string>
+    <string name="mensaje_error">Favor de llenar el campo</string>
+    <!--SegundaPantalla-->
+    <string name="et_url">Ingresa la URL</string>
+    <string name="btn_ver_web">Sitio web</string>
+    <string name="btn_acerca_de">Ver Acerca De</string>
+    <string name="tv_select">selecciona el contenido a mostrar</string>
+
+
+
+
+</resources>
